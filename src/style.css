@@ -9,8 +9,33 @@ p {
 h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-` 
 
 ul {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.refuge{
+    width: 40%;
+}
+
+.tigrou {
+    width: 40%;
+}
+
+.caramoule {
+    width: 40%;
+}
+
+.pepsi {
+    width: 40%;
+}
+
+.rico {
+    width: 40%;
 }
