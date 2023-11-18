@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="style.css" />
     <style>
       .menu{
         position:fixed;
@@ -28,15 +29,13 @@
     </style>
   </head>
   <body>
-    <!-- https://emmet.io/ -->
-    <!-- header>h1{Test de menu} -->
     <header>
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">menu</button> 
       <h1>Galerie photo d'animaux</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.500ms class="menu">
         <ul>
-          <li><a href="CHATS/index.html">CHAT</a></li>
-          <li><a href="CHIENS/index.html">CHIEN</a></li>
+          <li><a href="CHATS/index.html">CHATS</a></li>
+          <li><a href="CHIENS/index.html">CHIENS</a></li>
         </ul>
       </nav>
     </header>
