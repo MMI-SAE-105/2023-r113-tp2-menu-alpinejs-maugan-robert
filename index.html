@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&family=Roboto&display=swap');
     </style>
@@ -35,7 +35,7 @@
   <body>
     <header>
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img src="public/icones/RiMenuFill.svg" alt=""></button> 
-      <h1>Galerie photo d'animaux</h1>
+      <h1>Bienvenue au refuge de La Grotte</h1>
       <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.500ms class="menu">
         <ul>
           <li><a href="CHATS/index.html">CHATS</a></li>
@@ -44,7 +44,8 @@
       </nav>
     </header>
     <p>
-      Promenez vous et trouvez des photos de chats et de chiens.
+      Vous trouverez ici des animaux à adopter. Ils ont besoin de vous !
     </p>
+    <img src="public/img/animaux.jpeg" alt="image refuge">
   </body>
 </html>
