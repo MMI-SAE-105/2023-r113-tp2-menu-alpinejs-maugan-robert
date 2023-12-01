@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../src/style.css" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@700&family=Roboto&display=swap');
+    </style>
+    <style>
+      .menu{
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100vw;
+        height: 100vh;
+        background:#fff;
+        display:grid;
+        place-content:center;
+      }
+      .header__menuBtn{
+        position:relative;
+        z-index: 10;
+      }
+      .noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+  
+    </style>
+  </head>
+  <body>
+    <header>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img src="../public/icones/RiMenuFill.svg" alt=""></button> 
+      <h1>Welcome to La Grotte refuge</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.500ms class="menu">
+        <ul>
+          <li><a href="CHATS/index.html">CATS</a></li>
+          <li><a href="CHIENS/index.html">DOGS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>Here you will find animals to adopt. They need you !</p>
+    <div class="refuge"> 
+      <img src="../public/img/animaux.jpeg" alt="image refuge">
+    </div>
+  </body>
+</html>
