@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHIEN</title>
+    <title>DOGS</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="../src/style.css" />
+    <link rel="stylesheet" href="../../src/style.css" />
     <style>
         .menu{
           position:fixed;
@@ -30,15 +30,16 @@
 <body>
     <header>
         <header>
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img src="../public/icones/RiMenuFill.svg" alt=""></button> 
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn"><img src="../../public/icones/RiMenuFill.svg" alt=""></button> 
             <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.500ms class="menu">
               <ul>
-                <li><a href="../index.html">ACCUEIL</a></li>
-                <li><a href="../CHATS/index.html">CHATS</a></li>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../CHATS/index.html">CATS</a></li>
               </ul>
             </nav>
     </header>
-    <h1>Découvrez nos chiens à adopter</h1>
+    <h1>Discover our dogs for adoption</h1>
+    <p>Many of them are waiting for a family. Take the big step and adopt an adorable dog</p>
     <ul>
         <li><a href="chien 1.html">Pepsi</a></li>
         <li><a href="chien 2.html">Rico</a></li>      
